@@ -21,7 +21,7 @@ class MatchTimeServiceIntegrationTest extends IntegrationTestConfig {
     }
 
     @Test
-    void should_return_valid_with_correct_output() throws InvalidMatchTimeException {
+    void should_correct_output() throws InvalidMatchTimeException {
 
         assertEquals("00:00 - PRE_MATCH", matchTimeService.converter("[PM] 0:00.000"));
         assertEquals("00:15 - FIRST_HALF", matchTimeService.converter("[H1] 0:15.025"));
